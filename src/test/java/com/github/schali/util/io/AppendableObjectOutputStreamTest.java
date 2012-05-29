@@ -61,7 +61,6 @@ public class AppendableObjectOutputStreamTest {
 	@Test 
 	public void testReadObjects() throws Throwable {
 		ObjectInputStream in = new ObjectInputStream(new FileInputStream(outputfile));
-		
 		int i = 0;
 		
 		Object o = in.readObject();

@@ -9,7 +9,7 @@ import java.io.OutputStream;
 
 public class AppendableObjectOutputStream extends ObjectOutputStream{
 
-	public AppendableObjectOutputStream(OutputStream out) throws IOException {
+	private AppendableObjectOutputStream(OutputStream out) throws IOException {
 		super(out);
 	}
 	
