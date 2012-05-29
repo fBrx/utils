@@ -7,7 +7,7 @@
 	<packaging>jar</packaging>
 
 	<name>util</name>
-	<url>http://maven.apache.org</url>
+	<url>https://github.com/schali/utils</url>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -15,14 +15,24 @@
 
 	<build>
 		<plugins>
+		
+			<!-- set java version -->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
 				<configuration>
-					<source>1.7</source>
-					<target>1.7</target>
+					<source>1.5</source>
+					<target>1.5</target>
 				</configuration>
 			</plugin>
+			
+			<!-- configure release plugin -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-release-plugin</artifactId>
+				<version>2.2.1</version>
+			</plugin>
+			
 		</plugins>
 	</build>
 	
@@ -34,4 +44,10 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
+	
+	<scm>
+		<connection>scm:git:git@github.com:schali/utils.git</connection>
+		<url>scm:git:git@github.com:schali/utils.git</url>
+		<developerConnection>scm:git:git@github.com:schali/utils.git</developerConnection>
+	</scm>
 </project>
