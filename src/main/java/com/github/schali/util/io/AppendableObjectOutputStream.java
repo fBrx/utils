@@ -16,7 +16,6 @@ public class AppendableObjectOutputStream extends ObjectOutputStream{
 	@Override
 	protected void writeStreamHeader() throws IOException {
 		//omit header to avoid corrupting the stream/file
-		System.out.println("omitting header for apppending to file");
 	}
 	
 	public static ObjectOutputStream createObjectOutputStreamForFile(String filename) throws FileNotFoundException, IOException {

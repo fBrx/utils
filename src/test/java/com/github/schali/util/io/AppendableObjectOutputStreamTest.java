@@ -39,10 +39,7 @@ public class AppendableObjectOutputStreamTest {
 			Person p = new Person("test name " + i, 20+i);
 			contents[i] = p;
 		}
-	}
-	
-	@Test
-	public void testWriteObjects() throws Throwable {
+		
 		ObjectOutputStream out = AppendableObjectOutputStream.createObjectOutputStreamForFile(outputfile);
 		for(int i=0; i<contentsCount; i++) {
 			out.writeObject(contents[i]);

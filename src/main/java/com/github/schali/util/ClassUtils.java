@@ -1,6 +1,7 @@
 package com.github.schali.util;
 
 import java.net.URL;
+import java.security.ProtectionDomain;
 
 /**
  * Utility methods to work with and get information for classes.
@@ -15,6 +16,8 @@ public class ClassUtils {
 	 * 
 	 * @param clazz the class
 	 * @return the location from where tha class was loaded or <code>null</code>
+	 * @see Class#getProtectionDomain()
+	 * @see ProtectionDomain#getCodeSource()
 	 */
 	public static URL which(Class<?> clazz) {
 		try {
