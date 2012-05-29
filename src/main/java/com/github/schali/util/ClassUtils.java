@@ -1,4 +1,4 @@
-package com.github.schali.samples.util;
+package com.github.schali.util;
 
 import java.net.URL;
 
