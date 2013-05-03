@@ -15,7 +15,7 @@ public class ClassUtils {
 	 * of any error (for example when security restrictions apply).
 	 * 
 	 * @param clazz the class
-	 * @return the location from where tha class was loaded or <code>null</code>
+	 * @return the location from where tha class was loaded as URL or <code>null</code>
 	 * @see Class#getProtectionDomain()
 	 * @see ProtectionDomain#getCodeSource()
 	 */
