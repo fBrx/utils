@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/fBrx/utils.png)](https://travis-ci.org/fBrx/utils)
+
 # utils
 
 ## overview
